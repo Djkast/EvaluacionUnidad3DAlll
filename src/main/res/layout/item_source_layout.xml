@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_source">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/iv_width"
+        android:layout_height="@dimen/iv_height"
+        android:id="@+id/iv_source"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/iv_margin"
+        />
+
+    <TextView
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_source_name"
+        android:layout_toRightOf="@+id/iv_source"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/tv_size_name_product"
+        android:text="Source Name"
+
+        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_edit_source"
+            android:layout_toRightOf="@+id/tv_source_name"
+            android:src="@android:drawable/ic_menu_edit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_source_type"
+            android:layout_toRightOf="@+id/iv_source"
+            android:layout_below="@id/tv_source_name"
+            android:textSize="@dimen/tv_size_product_price"
+            android:text="Type Source"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_delete_source"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_below="@+id/bt_edit_source"
+            android:layout_toRightOf="@+id/tv_source_name"
+            android:layout_toEndOf="@+id/tv_source_name" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
